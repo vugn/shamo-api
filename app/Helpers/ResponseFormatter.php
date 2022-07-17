@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Helpers;
 
 class ResponseFormatter
 {
@@ -30,5 +30,4 @@ class ResponseFormatter
 
     return response()->json(self::$response, self::$response['meta']['code']);
   }
-
 }
